@@ -1,0 +1,45 @@
+const shows = [
+  {
+    title: "Henry Danger",
+    description: "A 13-year-old boy becomes the sidekick to a superhero, balancing his secret identity with everyday life.",
+    image: "henry-danger.jpg"
+  },
+  {
+    title: "Outer Banks",
+    description: "Teenagers in the Outer Banks of North Carolina search for a legendary treasure linked to a missing father.",
+    image: "outer-banks.jpg"
+  },
+  {
+    title: "13 Reasons Why",
+    description: "After a teenage girl's suicide, her friend uncovers a series of tapes revealing the reasons behind her decision.",
+    image: "13-reasons-why.jpg"
+  },
+  {
+    title: "You",
+    description: "A bookstore manager becomes dangerously obsessed with the women he dates, leading to dark consequences.",
+    image: "you.jpg"
+  },
+  {
+    title: "Sintonia",
+    description: "Three friends navigate the interconnected worlds of music, crime, and religion in a São Paulo neighborhood.",
+    image: "sintonia.jpg"
+  },
+  {
+    title: "All of Us Are Dead",
+    description: "Students trapped in a high school must fight for survival during a zombie outbreak.",
+    image: "all-of-us-are-dead.jpg"
+  }
+];
+
+// Function to display show information
+function displayShows(showList) {
+  showList.forEach(show => {
+    console.log(`Title: ${show.title}`);
+    console.log(`Description: ${show.description}`);
+    console.log(`Image: ${show.image}`);
+    console.log('---------------------------');
+  });
+}
+
+// Call the function to display the shows
+displayShows(shows);
