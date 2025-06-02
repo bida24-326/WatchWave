@@ -1,57 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatchWave | About</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WatchWave | About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+    }
+    header h1 span {
+      color: #00d2ff;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #b3f0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #00d2ff;
+      text-decoration: underline;
+    }
+    main.about-page {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .about-page h2 {
+      font-size: 2.2rem;
+      color: #00d2ff;
+      margin-bottom: 20px;
+    }
+    .about-page p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+    .about-page h3 {
+      font-size: 1.6rem;
+      color: #80e8ff;
+      margin-top: 30px;
+    }
+    .about-page ul {
+      list-style: square;
+      padding-left: 20px;
+      color: #d0f0ff;
+    }
+    .about-page ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .contact-section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+    }
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-section button {
+      background-color: #00d2ff;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-section button:hover {
+      background-color: #009dcf;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function showThankYou(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We'll get back to you soon.");
+    }
+  </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h1>Watch<span>Wave</span></h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="tvshows.html">TV Shows</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Watch<span>Wave</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Section -->
-    <main class="about-page">
-        <div class="container">
-            <h2>About WatchWave</h2>
-            <p><strong>WatchWave</strong> is a student-developed website by <strong>Oratile Hikhwa</strong> as part of the Web & Multimedia Development course at Botswana Accountancy College. This site is designed to showcase a creative and functional platform for browsing curated Netflix movies and TV shows.</p>
+  <main class="about-page">
+    <h2>About WatchWave</h2>
+    <p><strong>WatchWave</strong> is a student-developed website by <strong>Oratile Hikhwa</strong> as part of the Web & Multimedia Development course at Botswana Accountancy College. This platform showcases a functional and visually appealing space for browsing handpicked Netflix movies and TV shows.</p>
 
-            <p>The aim of WatchWave is to provide users with quick, engaging overviews of popular entertainment content. Each movie and series is presented with its rating, genre, and synopsis, to help viewers find something they'll love.</p>
+    <p>We aim to make entertainment discovery easier, more engaging, and visually fun! Our collection highlights fan-favorite shows and films along with quick descriptions, giving you just enough to pick your next binge-worthy title.</p>
 
-            <h3>Tools and Technologies Used</h3>
-            <ul>
-                <li>HTML5 for structure</li>
-                <li>CSS3 for styling and layout</li>
-                <li>JavaScript for interactivity</li>
-                <li>GitHub Pages for deployment</li>
-                <li>Visual Studio Code as IDE</li>
-                <li>GIMP for image editing</li>
-            </ul>
+    <h3>Tools and Technologies Used</h3>
+    <ul>
+      <li>HTML5 for clean structure</li>
+      <li>CSS3 for animations and layout styling</li>
+      <li>JavaScript for dynamic interaction</li>
+      <li>GitHub Pages for live deployment</li>
+      <li>Visual Studio Code for development</li>
+      <li>GIMP for image editing</li>
+    </ul>
 
-            <h3>Project Goals</h3>
-            <ul>
-                <li>Create a visually appealing, user-friendly website</li>
-                <li>Ensure responsiveness across devices</li>
-                <li>Demonstrate competency in web development techniques</li>
-                <li>Promote creativity in media presentation</li>
-            </ul>
-        </div>
-    </main>
+    <h3>Project Goals</h3>
+    <ul>
+      <li>Deliver a modern and accessible user experience</li>
+      <li>Ensure mobile-friendly and responsive design</li>
+      <li>Showcase coding proficiency and creativity</li>
+      <li>Encourage content discovery through aesthetics</li>
+    </ul>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 WatchWave | Created by Oratile Hikhwa</p>
-    </footer>
+    <div class="contact-section">
+      <h3>Contact Us</h3>
+      <form onsubmit="showThankYou(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WatchWave | Created by Oratile Hikhwa</p>
+  </footer>
 </body>
 </html>
