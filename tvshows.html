@@ -1,30 +1,168 @@
-<!-- TV Shows Section -->
-<div class="tvshow">
-  <h3>13 Reasons Why</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/13%20reasons%20why.jpg" alt="13 Reasons Why" width="200">
-  <p>A high school student’s suicide shocks her community, as her classmates uncover the 13 reasons why she did it.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchWave | TV Shows</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #121212, #1e1e1e);
+      color: #fff;
+    }
 
-<div class="tvshow">
-  <h3>YOU</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/YOU.webp" alt="YOU" width="200">
-  <p>A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.</p>
-</div>
+    header {
+      background-color: #048c44;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-<div class="tvshow">
-  <h3>Sintonia</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/Sintonia.webp" alt="Sintonia" width="200">
-  <p>Three teens from the same São Paulo favela pursue their dreams while maintaining their friendship, amid a world of music, drugs, and religion.</p>
-</div>
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+    }
 
-<div class="tvshow">
-  <h3>Outer Banks</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/outer%20banks.webp" alt="Outer Banks" width="200">
-  <p>A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.</p>
-</div>
+    header h1 span {
+      color: #f4d03f;
+    }
 
-<div class="tvshow">
-  <h3>Henry Danger</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/henry%20danger.jpg" alt="Henry Danger" width="200">
-  <p>A teenager becomes the sidekick to a legendary superhero, and must keep his identity secret while balancing his normal life.</p>
-</div>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f4d03f;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2.page-title {
+      text-align: center;
+      font-size: 2.3em;
+      margin-bottom: 40px;
+      color: #f4d03f;
+    }
+
+    .tvshow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .tvshow {
+      background-color: #222;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tvshow:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(244, 208, 63, 0.2);
+    }
+
+    .tvshow img {
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .tvshow img:hover {
+      transform: scale(1.05);
+    }
+
+    .tvshow h3 {
+      margin: 15px 0 10px;
+      color: #f4d03f;
+    }
+
+    .tvshow p {
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #048c44;
+      color: white;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Watch<span>Wave</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2 class="page-title">Top Trending TV Shows</h2>
+    <div class="tvshow-grid">
+      <div class="tvshow">
+        <h3>13 Reasons Why</h3>
+        <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/13%20reasons%20why.jpg" alt="13 Reasons Why">
+        <p>A high school student’s suicide shocks her community, as her classmates uncover the 13 reasons why she did it.</p>
+      </div>
+
+      <div class="tvshow">
+        <h3>YOU</h3>
+        <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/YOU.webp" alt="YOU">
+        <p>A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.</p>
+      </div>
+
+      <div class="tvshow">
+        <h3>Sintonia</h3>
+        <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/Sintonia.webp" alt="Sintonia">
+        <p>Three teens from the same São Paulo favela pursue their dreams while maintaining their friendship, amid a world of music, drugs, and religion.</p>
+      </div>
+
+      <div class="tvshow">
+        <h3>Outer Banks</h3>
+        <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/outer%20banks.webp" alt="Outer Banks">
+        <p>A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.</p>
+      </div>
+
+      <div class="tvshow">
+        <h3>Henry Danger</h3>
+        <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/henry%20danger.jpg" alt="Henry Danger">
+        <p>A teenager becomes the sidekick to a legendary superhero, and must keep his identity secret while balancing his normal life.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WatchWave | Created by Oratile Hikhwa</p>
+  </footer>
+</body>
+</html>
