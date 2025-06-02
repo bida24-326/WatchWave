@@ -1,36 +1,143 @@
-<!-- Movies Section -->
-<div class="movie">
-  <h3>Bird Box</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/bird%20box.jpg" alt="Bird Box" width="200">
-  <p>A woman and a pair of children are blindfolded and make their way through a dystopian setting along a river.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WatchWave | Movies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+    }
+    header h1 span {
+      color: #00d2ff;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      color: #b3f0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .movie-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .movie {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: 220px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .movie:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    .movie img {
+      width: 180px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .movie h3 {
+      color: #b3f0ff;
+      margin-bottom: 8px;
+    }
+    .movie p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Watch<span>Wave</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="movie">
-  <h3>Havoc</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/havoc.jpg" alt="Havoc" width="200">
-  <p>After a drug deal goes wrong, a detective must fight his way through a criminal underworld.</p>
-</div>
+  <section class="movie-container">
+    <div class="movie">
+      <h3>Bird Box</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/bird%20box.jpg" alt="Bird Box">
+      <p>A woman and two children must navigate a deadly world blindfolded to survive an unseen force.</p>
+    </div>
 
-<div class="movie">
-  <h3>Ready or Not</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/ready%20or%20not.jpg" alt="Ready or Not" width="200">
-  <p>A bride's wedding night takes a sinister turn when her new in-laws force her to take part in a terrifying game.</p>
-</div>
+    <div class="movie">
+      <h3>Havoc</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/havoc.jpg" alt="Havoc">
+      <p>A detective fights his way through a brutal underworld to rescue a politician’s son after a deal goes wrong.</p>
+    </div>
 
-<div class="movie">
-  <h3>Someone Great</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/someone%20great.jpg" alt="Someone Great" width="200">
-  <p>After a devastating breakup, a young woman takes a trip with her friends before moving for a new job.</p>
-</div>
+    <div class="movie">
+      <h3>Ready or Not</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/ready%20or%20not.jpg" alt="Ready or Not">
+      <p>A bride is hunted by her in-laws as part of a deadly family tradition on her wedding night.</p>
+    </div>
 
-<div class="movie">
-  <h3>All of Us Are Dead</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/all%20of%20us%20are%20dead.jpg" alt="All of Us Are Dead" width="200">
-  <p>Students trapped in a high school during a zombie virus outbreak must fight to survive and escape.</p>
-</div>
+    <div class="movie">
+      <h3>Someone Great</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/someone%20great.jpg" alt="Someone Great">
+      <p>After a breakup, a woman goes on one last NYC adventure with her best friends before moving for a new job.</p>
+    </div>
 
-<div class="movie">
-  <h3>Back in Action</h3>
-  <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/back%20in%20action.webp" alt="Back in Action" width="200">
-  <p>A retired couple gets pulled back into the world of espionage when their past missions come back to haunt them.</p>
-</div>
+    <div class="movie">
+      <h3>All of Us Are Dead</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/all%20of%20us%20are%20dead.jpg" alt="All of Us Are Dead">
+      <p>Students trapped in a zombie-ridden high school must fight to survive and find a way out.</p>
+    </div>
+
+    <div class="movie">
+      <h3>Back in Action</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/back%20in%20action.webp" alt="Back in Action">
+      <p>Retired spies are forced back into the game when their past missions come back to threaten their future.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WatchWave | Created by Oratile Hikhwa</p>
+  </footer>
+</body>
+</html>
