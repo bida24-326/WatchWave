@@ -1,86 +1,153 @@
-<section class="tv-shows-section">
-  <h2>Popular TV Shows</h2>
-  <div class="tv-show">
-    <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/13%20reasons%20why.jpg" alt="13 Reasons Why">
-    <h3>13 Reasons Why</h3>
-    <p>A high school student’s suicide shocks her community, as her classmates uncover the 13 reasons why she did it.</p>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WatchWave | TV Shows</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin: 0;
+    }
+    header h1 span {
+      color: #00d2ff;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #b3f0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #00d2ff;
+      text-decoration: underline;
+    }
 
-  <div class="tv-show">
-    <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/YOU.webp" alt="YOU">
-    <h3>YOU</h3>
-    <p>A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.</p>
-  </div>
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
 
-  <div class="tv-show">
-    <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/Sintonia.webp" alt="Sintonia">
-    <h3>Sintonia</h3>
-    <p>Three teens from the same São Paulo favela pursue their dreams while maintaining their friendship, amid a world of music, drugs, and religion.</p>
-  </div>
+    .tvshow {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-  <div class="tv-show">
-    <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/outer%20banks.webp" alt="Outer Banks">
-    <h3>Outer Banks</h3>
-    <p>A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.</p>
-  </div>
+    .tvshow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+    }
 
-  <div class="tv-show">
-    <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/henry%20danger.jpg" alt="Henry Danger">
-    <h3>Henry Danger</h3>
-    <p>A teenager becomes the sidekick to a legendary superhero, and must keep his identity secret while balancing his normal life.</p>
-  </div>
-</section>
+    .tvshow h3 {
+      color: #00d2ff;
+      margin-bottom: 10px;
+    }
 
-<style>
-  .tv-shows-section {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #1b1f22, #2c2f36);
-    color: #fff;
-    text-align: center;
-  }
+    .tvshow img {
+      width: 200px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
 
-  .tv-shows-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #ffcb05;
-  }
+    .tvshow img:hover {
+      transform: scale(1.05);
+    }
 
-  .tv-show {
-    background-color: #2a2d33;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 600px;
-  }
+    .tvshow p {
+      color: #e0e0e0;
+      font-size: 1rem;
+    }
 
-  .tv-show:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 25px rgba(255, 203, 5, 0.3);
-  }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-  .tv-show img {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Watch<span>Wave</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  .tv-show img:hover {
-    transform: scale(1.05);
-  }
+  <main>
+    <div class="tvshow">
+      <h3>13 Reasons Why</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/13%20reasons%20why.jpg" alt="13 Reasons Why" />
+      <p>A high school student’s suicide shocks her community, as her classmates uncover the 13 reasons why she did it.</p>
+    </div>
 
-  .tv-show h3 {
-    color: #ffcb05;
-    margin-bottom: 10px;
-  }
+    <div class="tvshow">
+      <h3>YOU</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/YOU.webp" alt="YOU" />
+      <p>A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.</p>
+    </div>
 
-  .tv-show p {
-    color: #ddd;
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-</style>
+    <div class="tvshow">
+      <h3>Sintonia</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/Sintonia.webp" alt="Sintonia" />
+      <p>Three teens from the same São Paulo favela pursue their dreams while maintaining their friendship, amid a world of music, drugs, and religion.</p>
+    </div>
+
+    <div class="tvshow">
+      <h3>Outer Banks</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/outer%20banks.webp" alt="Outer Banks" />
+      <p>A group of teenagers from the wrong side of the tracks stumble upon a treasure map that unearths a long buried secret.</p>
+    </div>
+
+    <div class="tvshow">
+      <h3>Henry Danger</h3>
+      <img src="https://raw.githubusercontent.com/bida24-326/WatchWave/main/henry%20danger.jpg" alt="Henry Danger" />
+      <p>A teenager becomes the sidekick to a legendary superhero, and must keep his identity secret while balancing his normal life.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WatchWave | Created by Oratile Hikhwa</p>
+  </footer>
+</body>
+</html>
